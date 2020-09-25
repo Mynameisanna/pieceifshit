@@ -1,0 +1,93 @@
+/* welcome to the style file of this project! */
+
+* {
+    transition: all ease .2s ;
+    position: absolute;
+}
+
+body{
+    height:100hv;
+}
+
+
+
+.square{
+    width:100px;
+    height:100px;
+    background-color:rgb(22 77 255 / 46%);
+    top: 400px;
+    left:1300px;
+    transform:skew(60deg) scale(3);
+    box-shadow: 30px 30px 29px 22px rgba(0,0,0,0.8);
+}
+
+.circle{
+    width:200px;
+    height:200px;
+    background-color:rgb(22 77 255 / 46%); 
+    border-radius:50%;
+}
+
+.square-two{
+    width:300px;
+    height:400px;
+    background-color:#f0f052a6; 
+    border-radius:20%; 
+    top: 450px;
+    left:60px;
+}
+
+.square-two:hover{
+    transform: rotate(300deg);
+}
+
+
+
+
+.frame{
+    width:1200px;
+    height:700px;
+    border: 1px solid black;
+    transform: rotate(40deg);
+}
+
+.ellipse{
+    width:1500px;
+    height:1000px;
+    background-color: greenyellow; 
+    top:40px;
+    left:50px;
+    border-radius:50% ;
+    background: rgb(251,179,63);
+background: radial-gradient(circle, rgba(251,179,63,1) 0%, rgba(255,113,113,1) 22%, rgba(126,196,181,1) 100%);
+animation: shrink 5s infinite alternate; 
+}
+    
+
+
+.circle-two{
+    width:200px;
+    height:200px;
+    background-color:#ffb275c7; 
+    border-radius:50%;
+    filter: blur(20px);
+    top:130px;
+    left:90px; 
+    mix-blend-mode: difference ;
+}
+
+.circle-two:hover{
+    width: 1500px;
+    background-color:greenyellow;
+    filter: blur(0);
+}
+
+
+
+@keyframes shrink{
+     from{
+     transform: scaleX(1)
+     } to {
+         transform: scaleX(0.2)
+     }
+ }
